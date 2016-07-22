@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `book_db` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `book_db`;
 -- MySQL dump 10.13  Distrib 5.7.12, for osx10.9 (x86_64)
 --
 -- Host: localhost    Database: book_db
@@ -140,4 +142,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-21 20:54:29
+-- Dump completed on 2016-07-21 21:14:47
