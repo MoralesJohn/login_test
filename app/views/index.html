@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for message in messages %}
+				<p class="alert">{{message}}</p>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+	<form action="/users/login" method="post">
+		<label>email</label>
+		<input type="text" name="email" />
+		<label>password</label>
+		<input type="password" name="password">
+		<input type="submit" name="Submit">
+	</form>
+	<hr />
+	<form action="/users/register" method="post">
+		<label>Name1</label>
+		<input type="text" name="first_name" />
+		<label>Name2</label>
+		<input type="text" name="last_name" />
+		<label>Email</label>
+		<input type="text" name="email" />
+		<label>Password</label>
+		<input type="password" name="password" />
+		<label>Conf Password</label>
+		<input type="password" name="conf_pw" />
+		<input type="submit" name="Submit">
+	</form>
+</body>
+</html>
